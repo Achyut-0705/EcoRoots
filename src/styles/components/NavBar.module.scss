@@ -1,0 +1,33 @@
+@import "../../mixins/global.scss";
+
+.container {
+  @include flex(row, space-between, center);
+  // gap: 1.5rem;
+  padding: 3rem 15rem;
+  height: 3rem;
+  background-color: transparent;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+
+    @media (max-width: 512px) {
+      // padding: 3rem;
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem;
+  }
+}
+
+.btnWrapper {
+  @include flex(row, space-evenly, center);
+  gap: 2rem;
+}

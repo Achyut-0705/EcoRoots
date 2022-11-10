@@ -1,0 +1,160 @@
+@import "../mixins/global.scss";
+
+.container {
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  // gap: 3rem;
+  padding: 3rem;
+
+  @include flex(column, center, center);
+  position: relative;
+
+  .top {
+    @include flex($align: center);
+    width: 100%;
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    // padding: 10rem;
+
+    h1 {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 20em;
+      letter-spacing: 0.1em;
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+.content {
+  @include flex(row, space-evenly, center);
+  width: 100%;
+}
+
+.left {
+  h1 {
+    all: unset;
+    font-size: 2.8em;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.8em;
+    font-weight: 100;
+    line-height: 1.5em;
+  }
+}
+
+.brands {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(22, 0, 59) 20.47%,
+    rgb(36, 0, 94) 98.55%
+  );
+  padding: 6rem 10rem;
+  display: grid;
+  place-items: center;
+  gap: 5rem;
+
+  h1 {
+    text-align: center;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 101px;
+    letter-spacing: 0.3em;
+
+    span {
+      color: rgba(247, 61, 147, 1);
+    }
+  }
+
+  .brandList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .brand {
+      width: 15%;
+    }
+  }
+}
+
+.products {
+  background: url("../images/foot.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 3rem;
+
+  h1 {
+    text-align: center;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 101px;
+    letter-spacing: 0.3em;
+
+    span {
+      color: rgba(247, 61, 147, 1);
+    }
+  }
+}
+
+.productList {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  padding: 5rem 2rem;
+}
+
+.lastFrame {
+  background: linear-gradient(180deg, rgb(35, 0, 93) 0%, rgb(36, 0, 96) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 2rem;
+
+  h1 {
+    text-align: center;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 101px;
+
+    span {
+      color: rgba(247, 61, 147, 1);
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+  }
+}
+
+.lastRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    text-align: center;
+    max-width: 40%;
+  }
+}
