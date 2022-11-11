@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Futura/static/css/main.d9fd6817.css",
-    "main.js": "/Futura/static/js/main.fca38bf2.js",
-    "static/media/rocket.svg": "/Futura/static/media/rocket.36f5f56b60590db67169724422ffc77d.svg",
-    "static/media/customerImage.svg": "/Futura/static/media/customerImage.f38a447a8138e72ea5ac0787633118a8.svg",
-    "static/media/productItem.svg": "/Futura/static/media/productItem.deacb6da13217d50684d7b8f2cdceb0f.svg",
-    "static/media/defaultBrandLogo.svg": "/Futura/static/media/defaultBrandLogo.bd437fb9846fc8354c7993d0e451d80c.svg",
-    "static/media/background.svg": "/Futura/static/media/background.22b1b19b55f0c05be8b3.svg",
-    "index.html": "/Futura/index.html",
-    "main.d9fd6817.css.map": "/Futura/static/css/main.d9fd6817.css.map",
-    "main.fca38bf2.js.map": "/Futura/static/js/main.fca38bf2.js.map"
+    "main.css": "/Ecoroots/static/css/main.007e6274.css",
+    "main.js": "/Ecoroots/static/js/main.65a6f864.js",
+    "static/media/rocket.svg": "/Ecoroots/static/media/rocket.36f5f56b60590db67169724422ffc77d.svg",
+    "static/media/customerImage.svg": "/Ecoroots/static/media/customerImage.f38a447a8138e72ea5ac0787633118a8.svg",
+    "static/media/productItem.svg": "/Ecoroots/static/media/productItem.deacb6da13217d50684d7b8f2cdceb0f.svg",
+    "static/media/defaultBrandLogo.svg": "/Ecoroots/static/media/defaultBrandLogo.bd437fb9846fc8354c7993d0e451d80c.svg",
+    "static/media/background.svg": "/Ecoroots/static/media/background.22b1b19b55f0c05be8b3.svg",
+    "index.html": "/Ecoroots/index.html",
+    "main.007e6274.css.map": "/Ecoroots/static/css/main.007e6274.css.map",
+    "main.65a6f864.js.map": "/Ecoroots/static/js/main.65a6f864.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9fd6817.css",
-    "static/js/main.fca38bf2.js"
+    "static/css/main.007e6274.css",
+    "static/js/main.65a6f864.js"
   ]
 }
