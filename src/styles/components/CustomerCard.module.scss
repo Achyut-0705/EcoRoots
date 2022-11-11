@@ -3,7 +3,11 @@
 .container {
   @include flexCenter(column);
   gap: 1rem;
-  background: #d7d9f8;
+  // background: #d7d9f8;
+  // background: linear-gradient(0deg, #b8ff80 -4.22%, #d5ffb5 100%, #d6ffb5 100%);
+  // border-radius: 41px;
+  background: #e9fed9;
+  box-shadow: -4px 5px 24px rgba(0, 123, 27, 0.14);
   border-radius: 41px;
   color: black;
   padding: 2rem 1rem;

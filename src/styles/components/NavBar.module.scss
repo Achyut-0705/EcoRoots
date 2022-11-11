@@ -1,7 +1,7 @@
 @import "../../mixins/global.scss";
 
 .container {
-  @include flex(row, space-between, center);
+  @include flex(row, flex-end, center);
   // gap: 1.5rem;
   padding: 3rem 15rem;
   height: 3rem;

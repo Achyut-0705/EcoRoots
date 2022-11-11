@@ -16,16 +16,16 @@ function Home() {
     <>
       <div className={styles.container}>
         <div className={styles.top}>
-          <h1>F</h1>
-          <img src={rocketImage} alt="u for futura" />
-          <h1>TURA</h1>
+          {/* <h1>F</h1>
+          <img src={rocketImage} alt="u for futura" /> */}
+          <h1>ecoroots</h1>
         </div>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h1>
+            {/* <h1>
               Empowering Brands Nationwide. Fueling The
               <br /> Future.
-            </h1>
+            </h1> */}
             <p>
               India's Only Space For All <b> Indie Brands </b>To <br />
               Flourish. Find<b> Top-Notch</b> Products Made <br />

@@ -1,5 +1,5 @@
 import styles from "../styles/Brand.module.scss";
-import defaultBrandLogo from "../images/defaultBrandLogo.svg";
+// import defaultBrandLogo from "../images/defaultBrandLogo.svg";
 import CTA from "../components/CTA";
 import ViewProducts from "../components/ViewProducts";
 import CustomerCard from "../components/CustomerCard";
@@ -11,7 +11,7 @@ import { error } from "../utils/Toasties";
 
 function Brand({ companyId = 1 }) {
   const [products, setProducts] = useState([]);
-  const [company, setCompany] = useState(null);
+  // const [company, setCompany] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -20,9 +20,9 @@ function Brand({ companyId = 1 }) {
   useEffect(() => {
     const getData = async () => {
       try {
-        const company = await instance.get(`/company/${id}`);
-        const products = await instance.get(`/product/company/${id}`);
-        setCompany(company.data.company);
+        // const company = await instance.get(`/company/${id}`);
+        const products = await instance.get(`/product/company/1`);
+        // setCompany(company.data.company);
         setProducts(products.data.products);
       } catch (err) {
         error(err.response.data.message);
@@ -34,7 +34,7 @@ function Brand({ companyId = 1 }) {
 
   return (
     <>
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <div className={styles.left}>
           <img
             src={`${(company && company.logoURL) || defaultBrandLogo}`}
@@ -56,13 +56,42 @@ function Brand({ companyId = 1 }) {
             style={{
               width: "30%",
               fontSize: "1.2em",
-              backgroundColor: "rgba(198, 2, 92, 1)",
-              color: "white",
+              // backgroundColor: "rgba(198, 2, 92, 1)",
+              // color: "white",
             }}
             onClick={() =>
               navigate("/explore", { state: { activeState: "products" } })
             }
           />
+        </div>
+      </div> */}
+      <div className={styles.container}>
+        <div className={styles.top}>
+          {/* <h1>F</h1>
+          <img src={rocketImage} alt="u for futura" /> */}
+          <h1>ecoroots</h1>
+        </div>
+        <div className={styles.content}>
+          <div className={styles.left}>
+            {/* <h1>
+              Empowering Brands Nationwide. Fueling The
+              <br /> Future.
+            </h1> */}
+            <p>
+              India's Only Space For All <b> Indie Brands </b>To <br />
+              Flourish. Find<b> Top-Notch</b> Products Made <br />
+              In India To Suit<b> Just What You Need!</b>
+            </p>
+          </div>
+          <div className={styles.right}>
+            <CTA
+              text="explore"
+              style={{ width: "20rem" }}
+              onClick={() =>
+                navigate("/explore", { state: { activeState: "products" } })
+              }
+            />
+          </div>
         </div>
       </div>
       <h1>

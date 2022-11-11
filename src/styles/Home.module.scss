@@ -8,19 +8,19 @@
   padding: 3rem;
 
   @include flex(column, center, center);
-  position: relative;
+  // position: relative;
 
   .top {
     @include flex($align: center);
     width: 100%;
-    position: absolute;
-    top: 12%;
-    left: 12%;
+    // position: absolute;
+    // top: 12%;
+    // left: 12%;
     // padding: 10rem;
 
     h1 {
       font-family: "Pathway Gothic One", sans-serif;
-      font-size: 20em;
+      font-size: 15em;
       letter-spacing: 0.1em;
     }
 

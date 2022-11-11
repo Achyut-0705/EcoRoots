@@ -1,11 +1,16 @@
 @import "../../mixins/global.scss";
 
 .container {
-  background: linear-gradient(180deg, rgb(27, 1, 71) 0%, rgb(9, 0, 23) 96.2%);
+  // background: linear-gradient(180deg, rgb(27, 1, 71) 0%, rgb(9, 0, 23) 96.2%);
+  background: #a3e56f;
   padding: 2rem 0;
 
   @include flex(row, space-evenly, center);
 }
+
+// .left {
+//   opacity: 0;
+// }
 
 .left,
 .right {
@@ -13,20 +18,36 @@
   gap: 2rem;
 }
 
-.logo {
-  width: 32px;
+// .logo {
+//   width: 32px;
+// }
+
+.left {
+  flex-direction: column;
+  gap: 1rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+
+    & > span {
+      // color: rgba(247, 61, 147, 1);
+      color: #007b1b;
+    }
+  }
 }
 
 .right {
   flex-direction: column;
   gap: 1rem;
   h2 {
-    font-size: 2rem;
+    // font-size: 2rem;
     font-weight: 500;
-    color: #fff;
+    color: black;
 
     & > span {
-      color: rgba(247, 61, 147, 1);
+      // color: rgba(247, 61, 147, 1);
+      color: #007b1b;
     }
   }
 }

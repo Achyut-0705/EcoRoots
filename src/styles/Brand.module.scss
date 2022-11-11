@@ -1,22 +1,22 @@
 @import "../mixins/global.scss";
 
-.container {
-  height: 100vh;
-  width: 100%;
-  @include flex($align: center, $justify: space-evenly);
-  padding: 3rem;
-  gap: 3rem;
-  background: url("../images/sellerHomeBg.svg") no-repeat;
-}
+// .container {
+//   height: 100vh;
+//   width: 100%;
+//   @include flex($align: center, $justify: space-evenly);
+//   padding: 3rem;
+//   gap: 3rem;
+//   background: url("../images/background.svg") no-repeat;
+// }
 
-.left {
-  width: 30%;
-  border-radius: 50%;
-  // overflow: hidden;
-  img {
-    border-radius: 50%;
-  }
-}
+// .left {
+//   width: 30%;
+//   border-radius: 50%;
+//   // overflow: hidden;
+//   img {
+//     border-radius: 50%;
+//   }
+// }
 
 .right {
   @include flex($align: center, $justify: center, $direction: column);
@@ -57,8 +57,9 @@ h1 {
 }
 
 .products {
-  background: url("../images/foot.svg");
-  background-repeat: no-repeat;
+  // background: url("../images/foot.svg");
+  // background-repeat: no-repeat;
+  background: linear-gradient(0deg, #b8ff80 -4.22%, #d5ffb5 100%, #d6ffb5 100%);
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -84,4 +85,45 @@ h1 {
   justify-content: space-evenly;
   gap: 5rem;
   padding: 5rem 2rem;
+}
+
+.container {
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  gap: 3rem;
+  padding: 13rem;
+
+  @include flex(column, center, center);
+  // position: relative;
+
+  .top {
+    @include flex($align: center);
+    width: 100%;
+
+    h1 {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 13em;
+      // background: red;
+      // letter-spacing: 0.1em;
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+.content {
+  @include flex(row, space-between, center);
+  width: 100%;
+}
+
+.left {
+  p {
+    font-size: 1.8em;
+    font-weight: 100;
+    line-height: 1.5em;
+  }
 }
